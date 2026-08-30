@@ -1,7 +1,4 @@
 .first{
-    margin-top:50px;
-    margin-left:40px;
-    margin-right:40px;
     position:relative;
 }
 
@@ -79,9 +76,11 @@
 
 .play:hover{
       background-color: rgba(255, 255, 255, 0.75);
+      cursor:pointer;
 }
 .info:hover{
     background-color: rgba(109, 109, 110, 0.4);
+    cursor:pointer;
 }
 .megaphone-button,
 .status{

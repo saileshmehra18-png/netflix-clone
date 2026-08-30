@@ -1,0 +1,144 @@
+.headline-text {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    margin: 36px 0 14px;
+}
+
+.continue-watching {
+    display: flex;
+    gap: 20px;
+    overflow: visible;
+    padding: 24px 28px 72px;
+    margin: -24px -28px -72px;
+}
+
+.video-card {
+    position: relative;
+    z-index: 1;
+    width: 245px;
+    height: 138px;
+    flex: 0 0 245px;
+}
+
+.card-content {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #181818;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+    transform-origin: center center;
+    transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.poster {
+    width: 100%;
+    height: 138px;
+    overflow: hidden;
+}
+
+.poster img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    max-height: 0;
+    padding: 0 12px;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 240ms ease, padding 240ms ease, opacity 160ms ease;
+}
+
+.card-info h3,
+.card-info p {
+    margin: 0;
+    color: #fff;
+}
+
+.card-info h3 {
+    font-size: 13px;
+}
+
+.card-info > p {
+    margin: 5px 0 10px;
+    color: #bcbcbc;
+    font-size: 11px;
+}
+
+.card-info .buttons {
+    align-items: center;
+}
+
+.card-info .first-pair,
+.card-info .second-pair {
+    gap: 7px;
+}
+
+.card-info button {
+    display: grid;
+    width: 29px;
+    height: 29px;
+    place-items: center;
+    padding: 0;
+    border: 1px solid #777;
+    border-radius: 50%;
+    background: rgba(42, 42, 42, 0.9);
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-info .play {
+    display: flex;
+    width: auto;
+    gap: 4px;
+    padding: 0 11px;
+    border: 0;
+    border-radius: 4px;
+    background: #fff;
+    color: #000;
+    font-size: 12px;
+}
+
+.card-info .play-icon {
+    font-size: 14px;
+}
+
+.card-info button:hover {
+    border-color: #fff;
+    background: #333;
+}
+
+.card-info .play:hover {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.video-card:hover,
+.video-card:focus-within {
+    z-index: 10;
+}
+
+.video-card:hover .card-content,
+.video-card:focus-within .card-content {
+    transform: scale(1.22);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.75);
+}
+
+.video-card:hover .card-info,
+.video-card:focus-within .card-info {
+    max-height: 120px;
+    padding: 11px 12px 12px;
+    opacity: 1;
+    transition: max-height 240ms ease, padding 240ms ease, opacity 180ms ease 60ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-content,
+    .card-info {
+        transition: none;
+    }
+}
+

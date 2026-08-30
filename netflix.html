@@ -1,45 +1,516 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>netflix clone</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="styles/video.css">
-        <link rel="stylesheet" href="styles/general.css">
-    </head>
-    <body>
-        <div class="first">
-            <img class="first-video" src="thumbnails/main.webp">
-            <img class="N" src="icons/netflix_PNG8.webp">
-                
-            <div class="main-video-informaton">
 
-                <p>Series <span class="grey-dot">&#x2022</span> Romance <span class="grey-dot">&#x2022</span> 2026 <span class="grey-dot">&#x2022</span> 8 Episodes <span class="grey-dot">&#x2022</span> U/A 13+</p>
+<head>
+    <title>netflix clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/main-video.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/videos.css">
+</head>
 
-                <p class="video-info">
-                    Years after an intense romance changed his life, a cafe`
-                    owner(Vikrant Massey) finds a new path in the hills.
-                </p>
-                <p class="video-source">Based on Divya Prakash Dubey's novel. 
-                </p>
-                <div class="buttons">
-                    <div class="first-pair">
-                        <button class="play"><span class="play-icon">&#9658</span> Play</button>
-                        <button class="info">More Info</button>
-                    </div>
-                    <div class="second-pair">
-                        <button class="megaphone-button">
+<body>
+    <div class="first">
+        <img class="first-video" src="thumbnails/main.webp">
+        <img class="N" src="icons/netflix_PNG8.webp">
+
+        <div class="main-video-informaton">
+
+            <p>Series <span class="grey-dot">&#x2022</span> Romance <span class="grey-dot">&#x2022</span> 2026 <span
+                    class="grey-dot">&#x2022</span> 8 Episodes <span class="grey-dot">&#x2022</span> U/A 13+</p>
+
+            <p class="video-info">
+                Years after an intense romance changed his life, a cafe`
+                owner(Vikrant Massey) finds a new path in the hills.
+            </p>
+            <p class="video-source">Based on Divya Prakash Dubey's novel.
+            </p>
+            <div class="buttons">
+                <div class="first-pair">
+                    <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                    <button class="info">More Info</button>
+                </div>
+                <div class="second-pair">
+                    <button class="megaphone-button">
                         <i class="bi bi-megaphone-fill announce-icon"></i>
                         <p>it's official another season is coming</p>
-                        </button>
-                        <button class="status">
-                            <span class="top-ten"><b>TOP</b><strong>10</strong></span>
-                            <p>#3 in Shows</p>
-                        </button>
-                        
+                    </button>
+                    <button class="status">
+                        <span class="top-ten"><b>TOP</b><strong>10</strong></span>
+                        <p>#3 in Shows</p>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <p class="headline-text">Continue Watching for saileshmehra08</p>
+        <div class="continue-watching">
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-1.webp">
                     </div>
-                    
+                    <div class="card-info">
+                        <h3>Series | Drama</h3>
+                        <p>2026 • 6 Seasons • HD </p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="remove">
+                                    <span class="remove-icon">
+                                        &#10005;
+                                    </span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-2.webp">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Horror</h3>
+                        <p>2021 •11 Seasons • HD </p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="remove">
+                                    <span class="remove-icon">
+                                        &#10005;
+                                    </span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-3.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Thriller</h3>
+                        <p>2023 • 8 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="remove">
+                                    <span class="remove-icon">
+                                        &#10005;
+                                    </span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-4.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Adventure</h3>
+                        <p>2024 • 5 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="remove">
+                                    <span class="remove-icon">
+                                        &#10005;
+                                    </span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
+        <p class="headline-text">Today's Top Picks for you </p>
+        <div class="continue-watching">
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-5.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Crime</h3>
+                        <p>2022 • 4 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-6.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Mystery</h3>
+                        <p>2025 • 2 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-7.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Sci-Fi</h3>
+                        <p>2021 • 7 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-8.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Romance</h3>
+                        <p>2026 • 3 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-9.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Action</h3>
+                        <p>2024 • 9 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="headline-text">Your Next Watch</p>
+        <div class="continue-watching">
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-10.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Drama</h3>
+                        <p>2020 • 6 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-11.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Comedy</h3>
+                        <p>2023 • 5 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-12.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Fantasy</h3>
+                        <p>2022 • 4 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-13.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Biography</h3>
+                        <p>2021 • 3 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="card-content">
+                    <div class="poster">
+                        <img src="thumbnails/thumbnail-14.webp" alt="Show thumbnail">
+                    </div>
+                    <div class="card-info">
+                        <h3>Series | Documentary</h3>
+                        <p>2024 • 8 Seasons • HD</p>
+                        <div class="buttons">
+                            <div class="first-pair">
+                                <button class="play"><span class="play-icon">&#9658</span> Play</button>
+                                <button class="add">
+                                    <span class="plus">&plus;</span>
+                                </button>
+                                <button class="like">
+                                    <span class="like-icon">
+                                        &#128443;
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="second-pair">
+                                <button class="info">
+                                    <span class="info-icon">
+                                        &#9432;
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
