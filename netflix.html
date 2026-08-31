@@ -10,6 +10,22 @@
 </head>
 
 <body>
+    <header class="header" id="site-header">
+        <a class="brand" href="#" aria-label="Netflix home">NETFLIX</a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+            <a href="#">Home</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">New &amp; Popular</a>
+            <a href="#">My List</a>
+        </nav>
+        <div class="header-actions">
+            <button type="button" class="header-icon" aria-label="Search"><i class="bi bi-search"></i></button>
+            <span class="profile-name">Sailesh</span>
+            <button type="button" class="header-icon" aria-label="Notifications"><i class="bi bi-bell"></i></button>
+            <button type="button" class="profile" aria-label="Open profile menu">S</button>
+        </div>
+    </header>
     <div class="first">
         <img class="first-video" src="thumbnails/main.webp">
         <img class="N" src="icons/netflix_PNG8.webp">
@@ -511,6 +527,16 @@
             </div>
         </div>
     </div>
+    <script>
+        const header = document.getElementById('site-header');
+
+        function updateHeaderBackground() {
+            header.classList.toggle('is-scrolled', window.scrollY > 0);
+        }
+
+        window.addEventListener('scroll', updateHeaderBackground, { passive: true });
+        updateHeaderBackground();
+    </script>
 </body>
 
 </html>
